@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius</title>
+</head>
+
+<body>
+
+    <header class="container mx-auto">
+        <div class=" bg-blue-300 flex justify-between place-items-center rounded-lg"
+            style="font-family: Arial, Helvetica, sans-serif; ">
+            <div class=" p-2 pl-4">
+                <h4 class="text-1xl font-bold">Interactive</h4>
+                <h4 class="text-sm text-gray-600">Geometry Genius</h4>
+            </div>
+            <div class="">
+                <button
+                    class=" bg-blue-500 hover:bg-blue-600  px-6 py-1 font-bold text-white rounded-lg mr-3 ">Blog</button>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <section>
+            <div class="container mx-auto mt-5">
+                <div class="grid grid-cols-3 gap-5 place-items-center">
+                    <div class="card w-96 bg-base-100 shadow-xl border-spacing-1">
+                        <figure><img src="images/triangle.png" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 class="font-bold text-2xl text-center">Triangle</h2>
+                            <p class="text-center">Area (A) = <span id="triangleSetValue">0.5</span> X b X h</p>
+                            <p>
+
+                                <input id="triangleBaseInput" class="w-28 rounded-lg bg-gray-100 py-1 px-1 text-black"
+                                    type="text" placeholder="base"><span class="pl-1">cm</span>
+                                <input id="TriangleHeightInput"
+                                    class="w-28 rounded-lg ml-4 bg-gray-100 py-1 px-1 text-black" type="text"
+                                    placeholder="height"><span class="pl-1">cm</span>
+
+                            </p>
+                            <h3 class="text-left font-bold ">Total Area : <span id="totalArea">0</span> cm<sup>2</sup>
+                            </h3>
+                            <div class="card-actions justify-center">
+                                <button id="triangleButtons"
+                                    class="bg-[#1090D8] w-full rounded-lg py-1 text-xl hover:bg-[#0783C9] text-white">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card w-96 bg-base-100 shadow-xl border-spacing-1">
+                        <figure><img src="images/rectangle.png" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 class="font-bold text-2xl text-center">Rectangle</h2>
+                            <p class="text-center">Area (A) = W X I</p>
+                            <p>
+
+                                <input id="SecondSectionFastInputs"
+                                    class="w-28 rounded-lg bg-gray-100 py-1 px-1 text-black" type="text"
+                                    placeholder="W"><span class="pl-1">cm</span>
+                                <input id="SecondSectionSecondInputs"
+                                    class="w-28 rounded-lg ml-4 bg-gray-100 py-1 px-1 text-black" type="text"
+                                    placeholder="I"><span class="pl-1">cm</span>
+
+                            </p>
+                            <h3 class="text-left font-bold ">Total Area : <span id="SecondTotalAreaSecond">0</span>
+                                cm<sup>2</sup> </h3>
+                            <div class="card-actions justify-center">
+                                <button id="SecondButtons"
+                                    class="bg-[#1090D8] w-full rounded-lg py-1 text-xl hover:bg-[#0783C9] text-white">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card w-96 bg-base-100 shadow-xl border-spacing-1">
+                        <figure><img src="images/parallelogram.png" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 class="font-bold text-2xl text-center">Parallelogram</h2>
+                            <p class="text-center">Area (A) = b X h</p>
+                            <p>
+
+                                <input id="thridInputsFastValue"
+                                    class="w-28 rounded-lg bg-gray-100 py-1 px-1 text-black" type="text"
+                                    placeholder="b"><span class="pl-1">cm</span>
+                                <input id="thridInputsSecondValue"
+                                    class="w-28 rounded-lg ml-4 bg-gray-100 py-1 px-1 text-black" type="text"
+                                    placeholder="h"><span class="pl-1">cm</span>
+
+                            </p>
+                            <h3 class="text-left font-bold ">Total Area : <span id="thirdTotalAreaSecond">0</span>
+                                cm<sup>2</sup> </h3>
+                            <div class="card-actions justify-center">
+                                <button id="thirdButtons"
+                                    class="bg-[#1090D8] w-full rounded-lg py-1 text-xl hover:bg-[#0783C9] text-white">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card w-96 bg-base-100 shadow-xl border-spacing-1">
+                        <figure><img src="images/rhombus.png" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 class="font-bold text-2xl text-center">Rhombus</h2>
+                            <p class="text-center">Area (A) = <span id="forthSectionFixtValu"> 0.5</span> X d1 X d2</p>
+                            <p>
+
+                                <input id="forthInputValuFast" class="w-28 rounded-lg bg-gray-100 py-1 px-1 text-black"
+                                    type="text" placeholder="d1"><span class="pl-1">cm</span>
+                                <input id="forthInputValuSecond"
+                                    class="w-28 rounded-lg ml-4 bg-gray-100 py-1 px-1 text-black" type="text"
+                                    placeholder="d2"><span class="pl-1">cm</span>
+
+                            </p>
+                            <h3 class="text-left font-bold ">Total Area : <span id="forthTotalAreaSecond">0</span>
+                                cm<sup>2</sup> </h3>
+                            <div class="card-actions justify-center">
+                                <button id="forthButtons"
+                                    class="bg-[#1090D8] w-full rounded-lg py-1 text-xl hover:bg-[#0783C9] text-white">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card w-96 bg-base-100 shadow-xl border-spacing-1">
+                        <figure><img src="images/pentagon.png" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 class="font-bold text-2xl text-center">Pentagon</h2>
+                            <p class="text-center">Area (A) = <span id="fifthFixtValus">0.5</span> X p X b</p>
+                            <p>
+
+                                <input id="fifthFastInputs" class="w-28 rounded-lg bg-gray-100 py-1 px-1 text-black" type="text"
+                                    placeholder="p"><span class="pl-1">cm</span>
+                                <input id="fifthSecondInputs" class="w-28 rounded-lg ml-4 bg-gray-100 py-1 px-1 text-black" type="text"
+                                    placeholder="b"><span class="pl-1">cm</span>
+
+                            </p>
+                            <h3 class="text-left font-bold ">Total Area : <span id="fifthTotalAreaSecond">0</span>
+                                cm<sup>2</sup> </h3>
+                            <div class="card-actions justify-center">
+                                <button id="fifth-button"
+                                    class="bg-[#1090D8] w-full rounded-lg py-1 text-xl hover:bg-[#0783C9] text-white">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card w-96 bg-base-100 shadow-xl border-spacing-1">
+                        <figure><img src="images/ellipse.png" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 class="font-bold text-2xl text-center">Ellipse</h2>
+                            <p class="text-center">Area (A) = πab</p>
+                            <p>
+
+                                <input id="sixFirstInputs" class="w-28 rounded-lg bg-gray-100 py-1 px-1 text-black" type="text"
+                                    placeholder="a"><span class="pl-1">cm</span>
+                                <input id="sixSecondInputs" class="w-28 rounded-lg ml-4 bg-gray-100 py-1 px-1 text-black" type="text"
+                                    placeholder="b"><span class="pl-1">cm</span>
+
+                            </p>
+                            <h3 class="text-left font-bold ">Total Area : <span id="sixTotalAreaSecond">0</span>
+                                cm<sup>2</sup> </h3>
+                            <div class="card-actions justify-center">
+                                <button id="sixButtons"
+                                    class="bg-[#1090D8] w-full rounded-lg py-1 text-xl hover:bg-[#0783C9] text-white">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="js/script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>
